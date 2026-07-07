@@ -42,7 +42,7 @@ checkIntr() {
 	fi
 }
 
-TEXT="$(cat kernel.txt)"
+TEXT="$(curl -s https://raw.githubusercontent.com/louishermanpaelinck/hackertyper/refs/heads/main/kernel.txt)"
 
 trap checkIntr SIGINT
 
